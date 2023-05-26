@@ -1,0 +1,98 @@
+{% extends 'homepage.html' %}
+{% load static %}
+{% block content %}
+{% include 'includes/header.html' %}
+{% include 'includes/nice.html' %}
+    <div class="parent__gallery">
+        <h1> MOST POPULAR TOURS </h1>
+
+        <div class="gallery">
+            <div randoms class="randoms  random1 active__random ">
+
+            </div>
+            <div randoms class="randoms  random2 ">
+
+            </div>
+            <div randoms class="randoms  random3 ">
+
+            </div>
+            <div randoms class="randoms  random4 ">
+
+            </div>
+            <div randoms class="randoms  random5 ">
+
+            </div>
+            <div randoms class="randoms  random6 ">
+
+            </div>
+        </div>
+
+        <div class="links">
+          <a href="{% url 'photos' %}">
+            <div class="link photo">
+                <h2 class="links__h2">Our gallery</h2>
+             
+              
+                <img src="{% static 'random/img_09.JPG'%}" alt="" class="items-img hovers">
+                <img src="{% static 'random/ars.jpg'%}" alt="" class="items-img hovers">
+                <img src="{% static 'random/ak-tor 3.jpg'%}" alt="" class="items-img hovers">
+            </div>
+          </a>
+          <a href="{% url 'video' %}">
+            <div class="link photo" >
+                <h2 class="links__h2" >Our videos</h2>
+                <div class="videos hovers ">
+                    <video autoplay loop muted  src="{{setting.gallery_vid1.url}}"></video>                        
+                </div>
+                <div class="videos hovers ">
+                    <video autoplay loop muted  src="{{setting.gallery_vid2.url}}"></video>
+                </div>
+                <div class="videos hovers  width">
+                    <video  autoplay loop muted src="{{setting.gallery_vid3.url}}"></video>
+                </div>
+                
+            </div>
+          </a>
+        </div>
+
+        
+    </div>
+    </div>
+
+    <footer>
+        <div class="hui" style="margin-top: 0 !important;">
+            <video class="bac__foooter" src="{{setting.footer_bg.url}}" autoplay muted loop></video>
+        <div class="footer">
+            <div class="footer__items">
+                <img src="{% static 'components/parmir__logo.png'%}" alt="" class="footer__logo">
+            </div>
+            <div class="footer__items">
+                <h3>FOLLOW <br> US:</h3>
+                    <img src="{% static 'icons/free-icon-instagram-2111463.png'%}" alt="" class="sub-icons">        
+                    <img src="{% static 'icons/free-icon-youtube-1384060.png'%}" alt="" class="sub-icons">      
+                    <img src="{% static 'icons/free-icon-facebook-733547.png'%}" alt="" class="sub-icons">      
+                    <img src="{% static 'icons/free-icon-twitter-3670211.png'%}" alt="" class="sub-icons">      
+            </div>
+           
+            <div class="footer__items">
+                <a href="./main.html">
+                    <h3>Home</h3>
+                </a>
+                <a href="./kyrgyzstan.html">
+                    <h3>Tours</h3>
+                </a>
+                <a href="./contact.html">
+                    <h3>Contacts</h3>
+                </a>
+                <a href="./gallery.html">
+                    <h3>Gallery</h3>
+                </a>
+            </div>
+        </div>
+         <div class="copyright" style="bottom: -7vh;">
+            <a href="#" id="rec2" >© Website made by<span><strong>It</strong><b>Park </b></span>Academy </a>
+        </div>
+        </div>
+       
+    </footer>
+{%endblock%}

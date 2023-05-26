@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.maps{
+    display: flex;
+    justify-content: center;
+    margin-top: 6%;
+ 
+}
+.form__contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column  ;
+    width: 54vw;
+    margin-top: 10%;
+    padding: 3%;
+    gap: 30px;
+    border-radius: 24px;
+     box-shadow:  1px 1px 5px #ecebeb, 
+ -5px -5px 5px #ffffff;
+}
+.inpts::placeholder{
+    color: #3670a260;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+}
+.thre3d{
+    width: 80% !important;
+}
+.inpts{
+    margin-right: 30px;
+    color: gray;
+    background-color:transparent; 
+    padding: 15px 15px;
+    width: 18.7vw;
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    box-shadow: inset 1px 1px 5px #ecebeb, 
+    inset -5px -5px 10px #ffffff;
+    
+}
+
+.form__contact button{
+    color: gray;
+    background-color:transparent;  
+    padding: 15px 15px;
+    width: 15vw;
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    box-shadow:  1px 1px 5px #ecebeb, 
+ -5px -5px 5px #ffffff;
+    transition: .3s !important;
+}
+.inpts:focus{
+    box-shadow: inset 1px 1px 3px #ecebeb, 
+    inset -5px -5px 3px #ffffff;
+    
+}
+.form__contact button:active{
+    box-shadow: inset 1px 1px 5px #ecebeb, 
+    inset -5px -5px 10px #ffffff;
+    
+}
+*::-webkit-scrollbar-thumb{
+    background-color: blue;
+    color: black;
+}

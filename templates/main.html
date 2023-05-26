@@ -1,0 +1,160 @@
+{% extends 'homepage.html' %}
+{% load static %}
+{% block content %}
+    <div firster class="preloader">
+    <h1>PAMIRKG.COM</h1>
+    <div class="jip"></div>
+    <div class="border"></div>
+    <div class="wrapper">
+        <div class="loader">
+           <div class="dot"></div>
+        </div>
+        <div class="loader">
+           <div class="dot"></div>
+        </div>
+        <div class="loader">
+           <div class="dot"></div>
+        </div>
+        <div class="loader">
+           <div class="dot"></div>
+        </div>
+        <div class="loader">
+           <div class="dot"></div>
+        </div>
+        <div class="loader">
+           <div class="dot"></div>
+        </div>
+     </div>
+  </div>
+    {% include "includes/header.html" %}
+    {% include 'includes/nice.html' %}
+
+
+
+    <section class="banner">
+        <div class="first__banner">
+
+            <video muted loop autoplay src="{{setting.top_bg.url}}"></video>
+            <div class="banner_elements">
+                <div class="banner__elements-item">
+                    <h1>Kyrgyzstan country Tours</h1>
+                    <p> <b>Kyrgyzstan </b> – is a mountainous country in Central Asia, crossed by ancient trade route linking China and Mediterranean - The Great Silk Road.</p>
+                    <a href="./contact.html">look</a>
+                </div>
+
+                <div class="banner__elements-item">
+                    <h1>Pamir tours</h1>
+                    <p>Tajikistan is an amazing country in Central Asia. One of its treasure is Pamir. Pamir mountains are located in several countries including Tajikistan. </p>
+                    <a href="./contact.html">look</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="storm">
+        <h1>Travel with us!</h1>
+        <div class="h2__parent">
+            <h2 class="absolute__h2"> <b> PAMIR</b> - DISCOVER MOMENTS<br> OF TRAVELING! </h2>
+        </div>
+        <div class="trio__parent">
+            <div class="the__trio bgone">
+                <a href="./kyrgyzstan.html"><b>where is it?</b></a>
+            </div>
+            <div class="the__trio bgtwo">
+                <a href="./kyrgyzstan.html"><b>where is it?</b></a>
+            </div>
+            <div class="the__trio bgthree">
+                <a href="./kyrgyzstan.html"><b>where is it?</b></a>
+            </div>
+        </div>
+    </section>
+    <section class="storm1">
+        <h1 class="new__history">Why  <b>PAMIR</b> ?</h1>
+        <div class="iconsParent">
+            <div class="iconsItem">
+                <h2>Пprofessional drivers!</h2>
+            </div>
+            <div class="iconsItem">
+                <h2>Affordable prices!</h2>
+            </div>
+            <div class="iconsItem">
+                <h2>100 % Customizable! </h2>
+            </div>
+            <div class="iconsItem">
+                <h2>more than 7 years experience!</h2>
+            </div>
+        </div>
+        <div class="numsParent">
+            <div class="numsTwos">
+                <h1>{{setting.trips}}</h1>
+                <p>TRIPS</p>
+            </div>
+            <div class="numsTwos">
+                <h1>{{setting.tourists}}</h1>
+                <p>TOURISTS</p>
+            </div>
+        </div>
+        <!-- <div class="radius__parent">
+            
+            <div class="columns__radius max-radius">
+                <a href="./kyrgyzstan.html"><b>Cары-Челек</b></a>
+                <h3>19 Фев, 2023</h3>
+                <h3>Ознакомьтесь с одобренным экспертами списком мест, обязательных к посещению в этом году, и получите незабываемые впечатления, которые гарантированно вас вдохновят.</h3>
+            </div>
+            <div class="columns__radius mini-radius">
+                <div class="mini-radius__childs">
+                    <img src="{% static 'components/Пик-Ленина.JPG" alt="Пик-Ленина">
+                    <p>Горные пейзажи</p>
+                    <h3><a style="color: #fff;" href="./kyrgyzstan.html">Ознакомтесь историческими ценностями Средней Азии</a></h3>
+                    <p><b>19 Фев, 2023</b></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem praesentium voluptas ratione, aspernatur, veniam vitae aliquid non nihil nam dolorum officiis nisi, quia modi illum. Repellat delectus corrupti </p>
+                </div>
+                <div class="mini-radius__childs">
+                    <img src="{% static 'components/горные_пейзажи.JPG" alt="Горные пейзажи">
+                    <p>Горные пейзажи</p>
+                    <h3><a style="color: #fff;" href="./kyrgyzstan.html">Ознакомтесь историческими ценностями Средней Азии</a> </h3>
+                    <p><b>19 Фев, 2023</b></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem praesentium voluptas ratione, aspernatur, veniam vitae aliquid non nihil nam dolorum officiis nisi, quia modi illum. Repellat delectus corrupti </p>
+
+                </div>
+            </div>
+        </div> -->
+        <!-- <div> -->
+        <footer>
+            <div class="hui">
+                <video class="bac__foooter" src="{{setting.footer_bg.url}}" autoplay muted loop></video>
+                <div class="footer">
+                    <div class="footer__items">
+                        <img src="{% static 'components/parmir__logo.png'%}" alt="" class="footer__logo">
+                    </div>
+                    <div class="footer__items">
+                        <h3>FOLLOW <br>US:</h3>
+                        <img src="{% static 'icons/free-icon-instagram-2111463.png'%}" alt="" class="sub-icons">
+                        <img src="{% static 'icons/free-icon-youtube-1384060.png'%}" alt="" class="sub-icons">
+                        <img src="{% static 'icons/free-icon-facebook-733547.png'%}" alt="" class="sub-icons">
+                        <img src="{% static 'icons/free-icon-twitter-3670211.png'%}" alt="" class="sub-icons">
+                    </div>
+                    <div class="footer__items">
+                        <a href="./main.html">
+                            <h3>Home</h3>
+                        </a>
+                        <a href="./kyrgyzstan.html">
+                            <h3>Tours</h3>
+                        </a>
+                        <a href="./contact.html">
+                            <h3>Contacts</h3>
+                        </a>
+                        <a href="./gallery.html">
+                            <h3>Gallery</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright" style="left: 0; bottom:0">
+                <a href="#" id="rec2">© Website made by <span><strong>It</strong><b>Park </b></span>Academy </a>
+            </div>
+        </footer>
+        </div>
+    </section>
+
+
+{% endblock content %}

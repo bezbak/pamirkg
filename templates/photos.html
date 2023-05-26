@@ -1,0 +1,53 @@
+{% extends 'homepage.html' %}
+{% load static %}
+{% block content %}
+{% include 'includes/header.html' %}
+{% include 'includes/nice.html' %}
+        <div class="content__gallery1"></div>
+
+
+    <div class="containers" id="gallery">
+        {% for photo in photos %}
+            <div class="content__gallery"><a data-fancybox="gallery" href="{{photo.photo.url}}"><img src="{{photo.photo.url}}" alt=""></a>
+            
+            </div>
+        {% endfor %}
+
+    </div>
+    <footer>
+        <div class="hui">
+            <video class="bac__foooter" src="{{setting.footer_bg.url}}" autoplay muted loop></video>
+        <div class="footer">
+            <div class="footer__items">
+                <img src="{% static 'components/parmir__logo.png'%}" alt="" class="footer__logo">
+            </div>
+            <div class="footer__items">
+                <h3>FOLLOW<br> US:</h3>
+                    <img src="{% static 'icons/free-icon-instagram-2111463.png'%}" alt="" class="sub-icons">        
+                    <img src="{% static 'icons/free-icon-youtube-1384060.png'%}" alt="" class="sub-icons">      
+                    <img src="{% static 'icons/free-icon-facebook-733547.png'%}" alt="" class="sub-icons">      
+                    <img src="{% static 'icons/free-icon-twitter-3670211.png'%}" alt="" class="sub-icons">      
+            </div>
+           
+            <div class="footer__items">
+                <a href="./main.html">
+                    <h3>Home</h3>
+                </a>
+                <a href="./kyrgyzstan.html">
+                    <h3>Tours</h3>
+                </a>
+                <a href="./contact.html">
+                    <h3>Contacts</h3>
+                </a>
+                <a href="./gallery.html">
+                    <h3>Gallery</h3>
+                </a>
+            </div>
+        </div>
+         <div class="copyright">
+            <a href="#" id="rec2" >© Website made by <span><strong>It</strong><b>Park </b></span> Academy </a>
+        </div>
+        </div>
+       
+    </footer>
+{% endblock %}

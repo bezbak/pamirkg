@@ -1,0 +1,191 @@
+{% extends 'homepage.html' %}
+{% load static %}
+{% block content %}
+{% include 'includes/header.html' %}
+
+  <div class="nice">
+    <img src="{% static 'components/gal.png'%}" alt="nice">
+    <h1>Done!</h1>
+  </div>
+  <a class="fix__animation" id="fix">get in touch</a>
+  <div class="fix__menu">
+    <button id="close__fix"><span></span><span></span></button>
+    <form class="fix__form">
+      <input type="text" name="" placeholder="Введите свое имя" id="">
+      <input type="text" name="" placeholder="Введите свой тел. номер" id="">
+      <input type="text" name="" placeholder="Введите свой email" id="">
+      <textarea name="" id="" cols="30" placeholder="Напишите что нибудь" rows="6"></textarea>
+      <input id="adds" class="form__btn" type="button" value="ОТПРАВИТЬ">
+      <!-- <img src="./icons/tyre.png'%}" alt=""> -->
+    </form>
+    <!-- <h3>Оставте свои данные</h3> -->
+    <video class="bacg__vid" src="{% static 'components/bacg.mp4'%}" autoplay loop muted></video>
+
+  </div>
+  <h1 class="zagolovok__marsh">3 days in Kyrgyzstan</h1>
+
+  <main class="mainskiy">
+    <button class="price" id="price"></button>
+
+    <section class="accc">
+        <section class="accordion">
+          <ul class="accordion__list" id="accordion">
+            <li class="accordion__item ac">
+              <div class="accordion__top">
+                <h3>Day 1: Trek to Sary Oi yurt camp over Kumbell Pass at 3154 m</h3>
+                <button class="accordion__btn">+</button>
+              </div>
+              <div class="accordion__bottom ac-panel">
+                <div class="image__parent">
+                  <img src="{% static 'random/ak-tor 2.jpg'%}" alt="">
+                </div>
+                <p>
+                  <b class="km">Trekking time: 5 hours, Trekking distance: 15 km, Max Elevation: 3140 m, Min Elevation:
+                    2283 m</b>
+                  <br>
+                  Departure from Osh city and drive on Pamir Highway to the Chyyirchyck Pass, 1 hour. Start trekking up
+                  to the Kum Bell pass 3154 meters, 2 hours. See shepherds busy with making bread and milking mares on
+                  the way. Have lunch at the top of the pass. Enjoy the stunning beauty of the rocky Alay Mountains.
+                  Walk down the pass across evergreens, 3 hours. Arrive at the locals’ camp and have hot tea in a yurt.
+                  Taste national dishes in an authentic yurt. Overnight in yurt camp.
+
+            </li>
+            <li class="accordion__item ac">
+              <div class="accordion__top">
+                <h3>Day 2: Hike to the foot of Ak Tor Pass</h3>
+                <button class="accordion__btn">+</button>
+              </div>
+              <div class="accordion__bottom ac-panel">
+                <div class="image__parent">
+                  <img src="{% static 'random/ak-tor 3.jpg'%}" alt="">
+                </div>
+                <p>
+                  <b class="km">Trekking time: 5 hours, Trekking distance: 13 km</b>
+                  <br>
+                  Morning life seems to be busy with milking cows and making creams. After breakfast follow the trail
+                  along the gushing river running in a gorge with green meadows and junipers. Break a lunch near a
+                  shepherd’s tent with an amazing view of craggy mountains behind. Continue your trip towards the foot
+                  of Aktor pass at 3557m. Home-cooked dinner and night in a yurt.
+
+            </li>
+            <li class="accordion__item ac">
+              <div class="accordion__top">
+                <h3>День 3: Переход в долину Мурдаш через живописный перевал Ак-Тор. </h3>
+                <button class="accordion__btn">+</button>
+              </div>
+              <div class="accordion__bottom ac-panel">
+                <div class="image__parent">
+                  <img src="{% static 'random/ak-tor.jpg'%}" alt="">
+                </div>
+                <p>
+                  <b class="km">Day 3: Trek to Murdash Valley over scenic Ak Tor Pass</b>
+                  <br>
+                  Breakfast. Cross the river and hike towards the foot of the pass to the south. A trail climbs
+                  southeast between craggy mountain walls to the summit Ak Tor Pass standing at 3500 meters. While
+                  hiking up, enjoy the views of stunning towering peaks and alpine pastures. Break for a snack on top of
+                  the pass. While descending the pass, enjoy soaring panoramas of the sharp rock walls of the Murdash
+                  Valley. Then walk down along the stream to the unpaved road, 3 hr. Trek ends at this unpaved road and
+                  drive 16 km to get to the main highway leading to Osh city, 2 hr. Arrival in Osh city. End of tour.
+
+            </li>
+
+          </ul>
+
+        </section>
+    </section>
+
+    <section class="section__rights">
+      <div class="fixed__menu">
+        <h1 style="color:#fff !important; font-weight: 100;">PRICE-LIST</h1>
+        <table class="price__table">
+          <tr>
+            <th colspan="5"> prices in dollars</th>
+          </tr>
+          <tr>
+            <th>Number of tourists</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <th>Price per person</th>
+            <td>1900$</td>
+            <td>950$</td>
+            <td>650$</td>
+            <td>500$</td>
+          </tr>
+        </table>
+        <span>
+        </span>
+        <p><i class="blya">√</i><b>INCLUDED:</b> <br> Car with driver, driver's meals and accommodation</p>
+        <p><i>Х</i><b>NOT INCLUDED:</b> <br> Meals, Accommodation, Entrance tickets</p>
+        <!-- <input type="text" placeholder="Сколько ночей" id="nigts">
+        <input type="text" placeholder="Сколько километров" id="km">
+        <button onclick="calc()" >Расчитать</button>
+        <p id="resultcalc"></p> -->
+
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="hui">
+      <video class="bac__foooter" src="{% static 'components/bac__footer.mp4'%}" autoplay muted loop></video>
+      <div class="footer">
+        <div class="footer__items">
+          <img src="{% static 'components/parmir__logo.png'%}" alt="" class="footer__logo">
+        </div>
+        <div class="footer__items">
+          <h3>FOLLOW<br> US:</h3>
+          <img src="{% static 'icons/free-icon-instagram-2111463.png'%}" alt="" class="sub-icons">
+          <img src="{% static 'icons/free-icon-youtube-1384060.png'%}" alt="" class="sub-icons">
+          <img src="{% static 'icons/free-icon-facebook-733547.png'%}" alt="" class="sub-icons">
+          <img src="{% static 'icons/free-icon-twitter-3670211.png'%}" alt="" class="sub-icons">
+        </div>
+
+        <div class="footer__items">
+          <a href="./main.html">
+            <h3>Home</h3>
+          </a>
+          <a href="./kyrgyzstan.html">
+            <h3>Tours</h3>
+          </a>
+          <a href="./contact.html">
+            <h3>Contacts</h3>
+          </a>
+          <a href="./gallery.html">
+            <h3>Gallery</h3>
+          </a>
+        </div>
+      </div>
+      <div class="copyright">
+        <a href="#" id="rec2">© Сайт сделан Академией <span><strong>It</strong><b>Park </b></span> </a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script> -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      let acc = new Accordion('.accordion__list', {
+        duration: 700,
+        elementClass: 'accordion__item',
+        triggerClass: 'accordion__top',
+        panelClass: 'accordion__bottom',
+        showMultiple: false,
+
+        collapse: true
+      });
+    })
+  </script>
+  <script>
+    document.querySelector('.accc').addEventListener('click', () => {
+      document.querySelector('.fixed__menu').classList.remove('prices')
+      document.querySelector('.price').classList.remove('befores')
+    })
+
+  </script>
+{%endblock%}

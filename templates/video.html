@@ -1,0 +1,106 @@
+{% extends 'homepage.html' %}
+{% load static %}
+{% block content %}
+{% include 'includes/header.html' %}
+{% include 'includes/nice.html' %}
+
+<div class="bacg__vids">
+  <video id="pizda" src="{{setting.gallery_bg.url}}" muted autoplay loop></video>
+</div>
+
+<div class="video__container">
+    {% for video in videos %}
+    <div class="video__item">
+        <video src="{{video.video.url}}"  controls></video>
+    </div>
+    {% endfor %}
+</div>
+<footer>
+    <div class="hui" style="margin-top: 0 !important;">
+        <video class="bac__foooter" src="{{setting.footer_bg.url}}" autoplay muted loop></video>
+    <div class="footer">
+        <div class="footer__items">
+            <img src="{% static 'components/parmir__logo.png'%}" alt="" class="footer__logo">
+        </div>
+        <div class="footer__items">
+            <h3>FOLLOW  <br> US:</h3>
+                <img src="{% static 'icons/free-icon-instagram-2111463.png'%}" alt="" class="sub-icons">        
+                <img src="{% static 'icons/free-icon-youtube-1384060.png'%}" alt="" class="sub-icons">      
+                <img src="{% static 'icons/free-icon-facebook-733547.png'%}" alt="" class="sub-icons">      
+                <img src="{% static 'icons/free-icon-twitter-3670211.png'%}" alt="" class="sub-icons">      
+        </div>
+       
+        <div class="footer__items">
+            <a href="./main.html">
+                <h3>Home</h3>
+            </a>
+            <a href="./kyrgyzstan.html">
+                <h3>Tours</h3>
+            </a>
+            <a href="./contact.html">
+                <h3>Contacts</h3>
+            </a>
+            <a href="./gallery.html">
+                <h3>Gallery</h3>
+            </a>
+        </div>
+    </div>
+     <div class="copyright" style="bottom: -7vh;">
+        <a href="#" id="rec2" >© Website made by<span><strong>It</strong><b>Park </b></span> Academy</a>
+    </div>
+    </div>
+   
+</footer>
+<script>
+    let sentences = ["Привет! ТУТ видео Памир"];
+let split = 0;
+let typeOff = 0;
+let intervalValue;
+let PamirText = document.querySelector("#text");
+let myCursor = document.querySelector("#cursor");
+
+function TypingEffect()
+{
+  let text = sentences[split].substring(0, typeOff +1);
+  PamirText.innerHTML = text;
+  typeOff++;
+  
+  if(text === sentences[split])
+  {
+    clearInterval(intervalValue);
+    setTimeout(function()
+    {
+      intervalValue = setInterval(DeletingEffect, 60);
+    }, 130);
+  }
+}
+
+<!-- function DeletingEffect()
+{
+  let text = sentences[split].substring(0, typeOff -1);
+  PamirText.innerHNTML = text;
+  typeOff--;
+  
+  if(text === '')
+  {
+    clearInterval(intervalValue);
+    if(split === (sentences.length-1))
+       split = 0;
+    else
+      split++;
+    
+    typeOff = 0;
+    
+    setTimeout(function()
+    {
+      myCursor.style.display = 'inline-block';
+      intervalValue = setInterval(TypingEffect,50);
+    }, 100);
+    
+  }
+} -->
+
+intervalValue = setInterval(TypingEffect, 100);
+</script>
+
+{% endblock %}

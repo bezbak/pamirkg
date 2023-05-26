@@ -1,0 +1,21 @@
+{% load static %}
+<div class="nice">
+    <img src="{% static 'components/gal.png'%}" alt="nice">
+    <h1>Done!</h1>
+</div>
+<a class="fix__animation" id="fix" >get in touch</a>
+<div class="fix__menu">
+    <button id="close__fix" ><span></span><span></span></button>
+    <form class="fix__form" method="POST">
+        {% csrf_token %}
+        <input name='full_name' type="text"  name="" placeholder="Введите свое имя" id="">
+        <input name='phone'  type="text" name="" placeholder="Введите свой тел. номер" id="">
+        <input name='email' type="text" name="" placeholder="Введите свой email" id="">
+        <textarea name='comment'  name="" id="" cols="30" placeholder="Напишите что нибудь" rows="6"></textarea>
+        <button id="adds" class="form__btn" type="submit">ОТПРАВИТЬ</button>
+        <!-- <img src="{% static 'icons/tyre.png'%}" alt=""> -->
+    </form>
+        <!-- <h3>Оставте свои данные</h3> -->
+        <video class="bacg__vid" src="{% static 'components/bacg.mp4'%}" autoplay loop muted></video>
+
+</div>

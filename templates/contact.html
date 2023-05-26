@@ -1,0 +1,58 @@
+{% extends 'homepage.html' %}
+{% load static %}
+{% block content %}
+{% include 'includes/header.html' %}
+{% include 'includes/nice.html' %}
+
+
+
+
+    <!-- <div class="form__contact">
+        <span>
+            <input type="text" class="inpts" placeholder="Введите свое имя">
+        <input type="text" class="inpts" placeholder="Введите свое имя">
+        </span>
+        <textarea class="inpts thre3d" placeholder="Напишите что-то" id="" cols="30" rows="10"></textarea>
+        <button>click</button>
+    </div> -->
+    
+    <div class="maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2850.916777575323!2d72.7951496152614!3d40.52934507935222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bdac1b6eb4c04d%3A0x729d312294baca96!2zMzE4INCf0YDQvtGB0L_QtdC60YIg0JvQtdC90LjQvdCwLCDQntGI!5e1!3m2!1sru!2skg!4v1676835994550!5m2!1sru!2skg" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <footer>
+        <div class="hui">
+            <video class="bac__foooter" src="{{setting.footer_bg.url}}" autoplay muted loop></video>
+        <div class="footer">
+            <div class="footer__items">
+                <img src="{% static 'components/parmir__logo.png'%}" alt="" class="footer__logo">
+            </div>
+            <div class="footer__items">
+                <h3>FOLLOW <br> US:</h3>
+                    <img src="{% static 'icons/free-icon-instagram-2111463.png'%}" alt="" class="sub-icons">        
+                    <img src="{% static 'icons/free-icon-youtube-1384060.png'%}" alt="" class="sub-icons">      
+                    <img src="{% static 'icons/free-icon-facebook-733547.png'%}" alt="" class="sub-icons">      
+                    <img src="{% static 'icons/free-icon-twitter-3670211.png'%}" alt="" class="sub-icons">      
+            </div>
+           
+            <div class="footer__items">
+                <a href="./main.html">
+                    <h3>Home</h3>
+                </a>
+                <a href="./kyrgyzstan.html">
+                    <h3>Kyrgyzstan</h3>
+                </a>
+                <a href="./tajikstan.html">
+                    <h3>Tajikstan</h3>
+                </a>
+                <a href="./contact.html">
+                    <h3>Contacts</h3>
+                </a>
+            </div>
+        </div>
+         <div class="copyright">
+            <a href="#" id="rec2" >© Website made <span><strong>It</strong><b>Park </b></span> Academy</a>
+        </div>
+        </div>
+       
+    </footer>
+{%endblock%}
