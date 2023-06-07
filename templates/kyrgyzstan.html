@@ -1,0 +1,136 @@
+{% extends 'homepage.html' %}
+{% load static %}
+{% block content %}
+{% include 'includes/header.html' %}
+{% include 'includes/nice.html' %}
+
+  <h1 class="zagolovok__marsh" style="color:#fff;">Our Tours</h1>
+
+  <!-- content -->
+  <!-- content -->
+  <!-- content -->
+  <!-- content -->
+  <div class="tours__parent">
+    {% for tour in tours %}
+    <a href="{% url 'tour' tour.id %}">
+      <div style="background-image:url({{tour.bg_image.url}}) !important;" class="tourses kr10">
+        <h2>{{tour.title}}</h2>
+
+        <div class="hover">
+          <p></p>
+          <span>
+            <b>{{tour.price}}</b>
+            <p>{{tour.days}}</p>
+          </span>
+        </div>
+      </div>
+    </a>
+    {% endfor %}
+    {% comment %} <a href="./Tours/kr-7day.html">
+      <div class="tourses kr7">
+        <h2>7 days in Kyrgyzstan</h2>
+
+        <div class="hover">
+          <p></p>
+          <span>
+            <b>450$</b>
+            <p>7 days, 6 nights</p>
+          </span>
+        </div>
+      </div>
+    </a>
+    <a href="./Tours/kr-3day.html">
+      <div class="tourses kr3">
+        <h2>3 days in Kyrgyzstan </h2>
+
+        <div class="hover">
+          <p></p>
+          <span>
+            <b>666$</b>
+            <p>3 days, 2 nights</p>
+          </span>
+        </div>
+      </div>
+    </a>
+    <a href="./Tours/tr-5day.html">
+      <div class="tourses tr5">
+        <h2>5 days along the Pamir Highway </h2>
+
+        <div class="hover">
+          <p></p>
+          <span>
+            <b>250$</b>
+            <p>5 days, 4 nights</p>
+          </span>
+        </div>
+      </div>
+    </a>
+    <a href="./Tours/tr-13day.html">
+      <div class="tourses tr13">
+        <h2>13 days along the Pamir Highway </h2>
+
+        <div class="hover">
+          <p></p>
+          <span>
+            <b>650$</b>
+            <p>13 days, 12 nights</p>
+          </span>
+        </div>
+      </div>
+    </a>
+    <a href="./Tours/tr-7day.html">
+      <div class="tourses tr7">
+        <h2>7 days from Osh to Dushanbe </h2>
+
+        <div class="hover">
+          <p></p>
+          <span>
+            <b>500$</b>
+            <p>7 days, 6 nights</p>
+          </span>
+        </div>
+      </div>
+    </a> {% endcomment %}
+  </div>
+  <!-- content -->
+  <!-- content -->
+  <!-- content -->
+  <!-- content -->
+  <footer >
+    <div class="hui" >
+      <video class="bac__foooter" src="{% static 'components/bac__footer.mp4'%}" autoplay muted loop></video>
+      <div class="footer">
+        <div class="footer__items">
+          <img src="{% static 'components/parmir__logo.png'%}" alt="" class="footer__logo">
+        </div>
+        <div class="footer__items">
+          <h3>FOLLOW<br>US:</h3>
+          <img src="{% static 'icons/free-icon-instagram-2111463.png'%}" alt="" class="sub-icons">
+          <img src="{% static 'icons/free-icon-youtube-1384060.png'%}" alt="" class="sub-icons">
+          <img src="{% static 'icons/free-icon-facebook-733547.png'%}" alt="" class="sub-icons">
+          <img src="{% static 'icons/free-icon-twitter-3670211.png'%}" alt="" class="sub-icons">
+        </div>
+
+        <div class="footer__items">
+          <a href="./main.html">
+              <h3>Home</h3>
+          </a>
+          <a href="./kyrgyzstan.html">
+              <h3>Tours</h3>
+          </a>
+          <a href="./contact.html">
+              <h3>Contacts</h3>
+          </a>
+          <a href="./gallery.html">
+              <h3>Gallery</h3>
+          </a>
+      </div>
+      </div>
+      <div class="copyright" style="margin-top: -44px !important;">
+        <a href="#" id="rec2">© Website made by <span><strong>It</strong><b>Park </b></span>Academy </a>
+      </div>
+    </div>
+
+  </footer>
+
+{% endblock content %}
