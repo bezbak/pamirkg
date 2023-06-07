@@ -68,9 +68,9 @@ WSGI_APPLICATION = 'pamir.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'pamir',
-        'USER': 'pamiradmin',
-        'PASSWORD': 'pamir2023',
+        'NAME': config.psql_name,
+        'USER': config.psql_USER,
+        'PASSWORD': config.psql_PASSWORD,
         'HOST': 'localhost',
         'PORT': 5432,
     }
