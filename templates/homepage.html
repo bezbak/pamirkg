@@ -20,9 +20,14 @@
 </head>
 
 <body>
-
-    {% block content %}
     
+    {% block content %}
+    {% if name == 'main' %}
+    {% else %}
+    {% include 'includes/header.html' %}
+    {% include 'includes/nice.html' %}
+    <main id='test_burger'></main>
+    {% endif %}
     {% endblock content %}
 
     <script src="{% static 'parralax.js'%}"></script>

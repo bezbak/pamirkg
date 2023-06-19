@@ -8,12 +8,24 @@
 //         open.removeAttribute('id', 'open');
 //     } 
 // })
+let burger = true
+const body_test = document.querySelector("#test_burger")
+body_test.addEventListener('click',()=>{
+    if(burger === false){
+        document.querySelector('.header__nav').classList.remove('open')
+        document.querySelector('.one').classList.remove('leftone')
+        document.querySelector('.three').classList.remove('rightree')
+        document.querySelector('.two').classList.remove('midtwo')
+        burger=true
+    }
+})
 document.addEventListener('DOMContentLoaded', ()=>{
     document.getElementById('burger').addEventListener('click',()=>{
         document.querySelector('.header__nav').classList.toggle('open');
         document.querySelector('.one').classList.toggle('leftone')
         document.querySelector('.three').classList.toggle('rightree')
         document.querySelector('.two').classList.toggle('midtwo')
+        burger = false
     });
     let prices = document.getElementById('price');
     prices.addEventListener('click', ()=>{
