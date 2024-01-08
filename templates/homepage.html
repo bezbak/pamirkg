@@ -20,11 +20,17 @@
 </head>
 
 <body>
-
-    {% block content %}
-    
-    {% endblock content %}
-
+    {% if name == 'main' %}
+        {% block content_main %}
+        {% endblock content_main %}
+    {% else %}
+    {% include 'includes/header.html' %}
+    {% include 'includes/nice.html' %}
+    <main id='test_burger'>
+        {% block content %}
+        {% endblock content %}
+    </main>
+    {% endif %}
     <script src="{% static 'parralax.js'%}"></script>
     <script src="{% static 'gallery.js'%}"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
