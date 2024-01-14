@@ -1047,12 +1047,15 @@ button {
     object-fit: cover;
     object-position: 50% 90%;
 }
+<<<<<<< HEAD
 @media (max-width:400px) {
     .bac__foooter{
         height: 100%;
 
     }
 }
+=======
+>>>>>>> refs/remotes/origin/main
 
 .footer__logo {
     width: 20vmin;
@@ -1126,4 +1129,8 @@ ul {
 
 #rec2 span {
     text-shadow: 0px 0px 5px black;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> refs/remotes/origin/main

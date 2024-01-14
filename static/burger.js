@@ -17,7 +17,10 @@ body_test.addEventListener('click',()=>{
         document.querySelector('.three').classList.remove('rightree')
         document.querySelector('.two').classList.remove('midtwo')
         burger=true
+<<<<<<< HEAD
 	console.log("test s1")
+=======
+>>>>>>> refs/remotes/origin/main
     }
 })
 document.addEventListener('DOMContentLoaded', ()=>{
