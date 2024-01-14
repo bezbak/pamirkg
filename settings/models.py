@@ -37,13 +37,13 @@ class Setting(models.Model):
         verbose_name_plural = 'Настройки сайта'
 class Tours(models.Model):
     title = models.CharField(
-        max_length=25
+        max_length=2555
     )
     price = models.CharField(
-        max_length=255
+        max_length=2555
     )
     days = models.CharField(
-        max_length=255
+        max_length=2555
     )
     bg_image = models.ImageField(
         upload_to='bg/'
@@ -78,7 +78,7 @@ class Tours(models.Model):
         verbose_name_plural = 'Туры'
 class Days(models.Model):
     title = models.CharField(
-        max_length=100
+        max_length=150
     )
     image = models.ImageField(
         upload_to='tour_image/'

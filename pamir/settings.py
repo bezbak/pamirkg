@@ -67,23 +67,23 @@ WSGI_APPLICATION = 'pamir.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': os.path.join(BASE_DIR, 'db.db'),
+#    }
+#}
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.db'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': config.psql_name,
+        'USER': config.psql_USER,
+        'PASSWORD': config.psql_PASSWORD,
+        'HOST': 'localhost',
+        'PORT': 5432,
     }
 }
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': config.psql_name,
-#         'USER': config.psql_USER,
-#         'PASSWORD': config.psql_PASSWORD,
-#         'HOST': 'localhost',
-#         'PORT': 5432,
-#     }
-# }
 
 
 # Password validation
@@ -129,10 +129,9 @@ EMAIL_USE_TLS = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static/'),
+    os.path.join(BASE_DIR, 'static'),
 ]
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR , 'media')
 
