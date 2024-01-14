@@ -69,14 +69,21 @@ WSGI_APPLICATION = 'pamir.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': config.psql_name,
-        'USER': config.psql_USER,
-        'PASSWORD': config.psql_PASSWORD,
-        'HOST': 'localhost',
-        'PORT': 5432,
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.db'),
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': config.psql_name,
+#         'USER': config.psql_USER,
+#         'PASSWORD': config.psql_PASSWORD,
+#         'HOST': 'localhost',
+#         'PORT': 5432,
+#     }
+# }
 
 
 # Password validation

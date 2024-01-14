@@ -197,13 +197,13 @@ a {
     display: block;
     width: 30px;
     height: 30px;
-    background-image: url(../icons/balon.png);
+    background-image: url('../icons/balon.png');
     background-size: cover;
     bottom: -18px;
     border-radius: 50%;
     left: 19px;
 
-    animation: 1.1s linear balon1 infinite;
+    animation: 1.1s linear balon1 ;
 }
 
 @keyframes balon1 {
@@ -227,12 +227,12 @@ a {
     display: block;
     width: 30px;
     height: 30px;
-    background-image: url(../icons/balon.png);
+    background-image: url('../icons/balon.png');
     background-size: cover;
     bottom: -18px;
     border-radius: 50%;
     left: 98px;
-    animation: 1.1s linear infinite balon;
+    animation: 1.1s linear balon;
 }
 
 @keyframes balon {
