@@ -67,12 +67,12 @@ WSGI_APPLICATION = 'pamir.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-#DATABASES = {
+# DATABASES = {
 #    'default': {
 #        'ENGINE': 'django.db.backends.sqlite3',
 #        'NAME': os.path.join(BASE_DIR, 'db.db'),
 #    }
-#}
+# }
 
 DATABASES = {
     'default': {
