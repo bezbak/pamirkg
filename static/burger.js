@@ -1,13 +1,3 @@
-// let open = document.querySelector('.header__nav');
-// let btn = document.querySelector('.burger__btn');
-// btn.addEventListener('click', function fnc(){
-//     if(open == 1){
-//         open.setAttribute('id', 'open');
-//     }
-//     else{
-//         open.removeAttribute('id', 'open');
-//     } 
-// })
 let burger = true
 const body_test = document.querySelector("#test_burger")
 body_test.addEventListener('click',()=>{
