@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-'*{
-=======
 *{
->>>>>>> refs/remotes/origin/main
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,17 +8,13 @@
   --adap:calc(1vw+1vh)
 
 }
-<<<<<<< HEAD
 #test_burger{
   min-height: 156vh;
   position: relative;
 }
-=======
->>>>>>> refs/remotes/origin/main
 body{ 
   background-image: url(../random/bac__body.jpg);
   background-size: cover;
-  /* transform: rotate(); */
   background-position-y:10% ;
   background-repeat: no-repeat;
 }
@@ -46,12 +38,10 @@ body{
   width: 300px;
   height: 300px;
   position: relative;
-  /* background-image:  url(../random/img_03.JPG); */
   background-size: cover;
   color:#FFF;
   background-position: center;
 }
-<<<<<<< HEAD
 footer{
     position: absolute;
     bottom: 0;
@@ -64,8 +54,6 @@ footer{
     max-width: 100%;
   } 
 }
-=======
->>>>>>> refs/remotes/origin/main
 @media (max-width:1024px) {
   .tourses{
     width: 260px;
@@ -233,8 +221,4 @@ opacity: 1;
   font-weight: 100;
   font-size: calc(var(--adap)*1.5);
 
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> refs/remotes/origin/main

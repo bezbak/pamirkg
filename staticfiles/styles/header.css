@@ -10,10 +10,7 @@ a{
 }
 body{
     background-color: aliceblue;
-<<<<<<< HEAD
     min-height: 100vh !important;
-=======
->>>>>>> refs/remotes/origin/main
 }
 
 .header{
